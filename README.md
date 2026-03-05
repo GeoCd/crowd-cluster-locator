@@ -89,7 +89,7 @@ These were known constraints at the time. The classifier was trained on a small 
 | `TestLocator.m` | Tests the classifier on a single image |
 | `People.mat` | Positive instances for classifier training |
 | `PersonLocator.xml` | Trained classifier model |
-| `data/` | Test images (People1–5.jpg) |
+| `data/` | Test images Negatives (Background) & Positives (Objects) |
 | `results/` | Output screenshots |
 
 ---
