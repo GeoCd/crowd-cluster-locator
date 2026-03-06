@@ -105,3 +105,13 @@ MATLAB — Computer Vision Toolbox, `vision.CascadeObjectDetector`, `trainCascad
 This was built for the Neuro-Fuzzy Systems and Artificial Vision courses at UPIITA–IPN. The curriculum covered CNNs, RNNs, Adaline and competitive learning networks. This project was my attempt to combine both courses into something that actually did something useful, built mostly from first principles without external ML frameworks.
 
 Documenting it now because I think it holds up better than I gave it credit for at the time.
+
+---
+
+## Honest reflections
+
+The hardest part was exactly what the limitations section describes — the dataset was small, and building a proper one would have taken a lot of time. Getting good detection meant varied lighting, angles, backgrounds, and distances, and doing a thorough photo session with Lego figures under all those conditions is more work than it sounds when you're also building the rest of the system.
+
+The project came out of the tool detection work from a previous course. After getting that working, the natural next question was whether the same approach could detect people — which is the classic use case you see in security cameras. I knew it would be more primitive than what those systems actually use, and combining it with a clustering network was intentional: I wanted to do something beyond plain detection, something that added a layer of spatial reasoning on top.
+
+There was also an idea I didn't get to finish — live camera feed with real-time detection. The problem was figuring out how to run the webcam capture and the MATLAB plot loop asynchronously without one blocking the other. I didn't have time to research async processing in MATLAB properly before the deadline, so that stayed on the list.
